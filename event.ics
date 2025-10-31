@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swaraj & Snehal Wedding Invite//EN
+BEGIN:VEVENT
+UID:20251215T183000Z@example.com
+DTSTAMP:20251031T000000Z
+DTSTART:20251215T183000Z
+DTEND:20251215T223000Z
+SUMMARY:Swaraj & Snehal's Wedding Celebration
+LOCATION:Royal Orchid Banquet, Pune
+DESCRIPTION:Join us to celebrate the wedding of Swaraj & Snehal!
+END:VEVENT
+END:VCALENDAR

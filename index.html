@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invite</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe5ec, #ffe9f3);
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+  <div id="invite" class="bg-white p-8 rounded-2xl shadow-2xl text-center max-w-md">
+    <h1 class="text-3xl font-bold text-rose-600 mb-2">You're Invited!</h1>
+    <p class="text-lg text-gray-700 mb-3">Join us for the wedding celebration of</p>
+    <h2 id="names" class="text-2xl font-semibold mb-4"></h2>
+    
+    <p class="text-md mb-1"><strong>Date:</strong> <span id="date"></span></p>
+    <p class="text-md mb-4"><strong>Time:</strong> <span id="time"></span></p>
+    
+    <p class="text-md mb-4">
+      <strong>Venue:</strong><br>
+      <span id="venue-name"></span><br>
+      <a id="venue-link" target="_blank"
+         class="text-rose-600 underline mt-1 inline-block">📍 Open in Google Maps</a>
+    </p>
+
+    <div class="flex flex-col gap-3">
+      <a href="event.ics" download
+         class="bg-rose-500 text-white px-4 py-2 rounded-lg hover:bg-rose-600 transition">
+         📅 Add to Calendar
+      </a>
+
+      <a id="google-calendar" target="_blank"
+         class="text-rose-600 underline text-sm">Add to Google Calendar</a>
+    </div>
+
+    <p id="message" class="text-xs text-gray-400 mt-6"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
